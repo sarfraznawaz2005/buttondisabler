@@ -1,6 +1,6 @@
 {
   "name": "buttondisabler",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple package to disable submit button to avoid duplicate form submissions.",
   "main": "lib/buttondisabler.js",
   "scripts": {

@@ -5,10 +5,14 @@ http://codeinphp.github.io/
 
 export default class buttondisabler {
 
-  constructor(options) {
-    this.selector = options && options.selector || 'button[type="submit"], input[type="submit"]';
-    this.timeout = options && options.timeout || 5000;
-    this.text = options && options.text || 'Wait...';
+  constructor({
+    selector = 'button[type="submit"], input[type="submit"]',
+    timeout = 5000,
+    text = 'Wait...'
+  } = {}) {
+    this.selector = selector;
+    this.timeout = timeout;
+    this.text = text;
 
     this.bind();
   }
